@@ -12,6 +12,13 @@ body {
 span{
     color: #DC5F00;
 }
+
+/* Deu certo */
+
+body.light-mode span {
+    color: #023def;
+}
+
 /* Cabeçalho fixo */
 header {
     position: fixed;
@@ -74,12 +81,32 @@ ul a {
     overflow: hidden;
 }
 
+.apresentacao p span {
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
 .apresentacao h2 {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 3em;
     margin-top: 20px;
     width: 500px;
+}
+
+.botaoHome {
+    background-color: #dc5f00;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+body.light-mode .botaoHome{
+    background-color: #023def;
 }
 
 .apresentacao span {
@@ -189,6 +216,24 @@ img {
         background-color: black;
     }
 }
+body.light-mode .projetos img{
+    background-color: #fff;
+}
+
+body.light-mode .projetos a{
+    border: solid 2px rgb(48, 41, 41);
+    border-radius: 7px;
+    color: #080606;
+    padding: 9px;
+}
+
+body.light-mode .projetos p{
+    margin: 9px;
+}
+
+body.light-mode .projetos a:hover{
+    color: #023def;
+}
 
 .laptop-container {
     display: grid;
@@ -280,4 +325,26 @@ footer p {
     margin-top: 10px;
     font-size: 1em;
     opacity: 0.8;
+}
+
+/* Tema Claro */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Estilizando o botão */
+#toggleTheme {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #DC5F00;
+    color: white;
+    transition: 0.3s;
+}
+
+#toggleTheme:hover {
+    background-color: #a94400;
 }
