@@ -39,6 +39,12 @@ header {
     pointer-events: none;
 }
 
+h2 {
+    font-size: 2.5em;
+    padding: 19px;
+    font-weight: bold;
+}
+
 /* Navegação */
 ul {
     display: flex;
