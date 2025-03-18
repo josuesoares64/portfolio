@@ -13,6 +13,10 @@ span{
     color: #DC5F00;
 }
 
+h1 {
+    font-family: sans-serif;
+}
+
 /* Deu certo */
 
 body.light-mode span {
@@ -47,6 +51,7 @@ h2 {
 
 /* Navegação */
 ul {
+    font-family: sans-serif;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -54,6 +59,11 @@ ul {
 
 ul li {
     margin: 9px;
+}
+
+ul li:hover{
+    text-decoration: underline;
+    transition: .5s;
 }
 
 ul a {
@@ -74,6 +84,16 @@ ul a {
     margin-top: 15%;
     width: 400px;
     background-color: transparent;
+}
+
+#titulo::after {
+    content: "|";
+    animation: blink 0.10s infinite alternate;
+}
+
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 .apresentacao {

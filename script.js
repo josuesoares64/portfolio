@@ -1,3 +1,9 @@
+const titulo = document.getElementById("titulo");
+const textos = ["Desenvolvedor Fullstack", "Foco em Front-end"];
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;    
+    
     document.addEventListener("DOMContentLoaded", function () {
         const toggleButton = document.getElementById("toggleTheme");
         const body = document.body;
@@ -19,3 +25,26 @@
             }
         });
     });
+
+// Muda titulo  
+function typeEffect() {
+    let currentText = textos[index];
+    let displayedText = currentText.substring(0, charIndex);
+
+    titulo.textContent = displayedText;
+
+    if (!isDeleting && charIndex < currentText.length) {
+        charIndex++;
+        setTimeout(typeEffect, 100);
+    } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(typeEffect, 50);
+    } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+            index = (index + 1) % textos.length;
+        }
+        setTimeout(typeEffect, 1500);
+    }
+}
+typeEffect();
