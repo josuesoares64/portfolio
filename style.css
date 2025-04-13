@@ -13,6 +13,11 @@ span{
     color: #DC5F00;
 }
 
+span a {
+    text-decoration: none;
+    color: #023def;
+}
+
 h1 {
     font-family: sans-serif;
 }
@@ -89,11 +94,6 @@ ul a {
 #titulo::after {
     content: "|";
     animation: blink 0.10s infinite alternate;
-}
-
-@keyframes blink {
-    from { opacity: 1; }
-    to { opacity: 0; }
 }
 
 .apresentacao {
@@ -287,7 +287,7 @@ body.light-mode .projetos a:hover{
 
 .screen {
     position: absolute;
-    top: 5%; 
+    top: 3%; 
     left: 7%;
     width: 86%; 
     height: 62%;
@@ -532,9 +532,71 @@ footer p {
 
     .laptop-wrapper p{
         font-size: 0.9rem;
+
     }
 
     .screen {
-        height: 43%;
+        height: 43%; 
+        & p {
+            font-size: 9px;
+        }
     }
 }
+
+@media (max-width: 321px) { 
+    .video-bg {
+        height: 668px;
+    }
+    .bolocosHome {
+        display: flex;
+        flex-direction: column;
+        & .apresentacao {
+            margin: 20px 0 0 20px;
+            height: 250px;
+        }
+        & .contatos{
+            margin-top: 26px;
+        }
+        & .imgHome {
+            margin-top: 10px;
+            height: 150px;
+        }
+    }
+
+    .sectionSobre {
+        margin-top: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 12px;
+        & .imgSobre {
+            width: 180px;
+        }
+        & .textoSobre {
+            margin-top: 40px;
+            width: 100%;
+            text-align: justify;
+        & h2 {
+            margin: 20px 0 5px 0;
+        }
+        }
+    }
+
+    .logos {
+        margin: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+   .screen {
+    height: 50%;
+   }
+
+   .habilidades {
+    margin: 0;
+   }
+
+    .laptop-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
