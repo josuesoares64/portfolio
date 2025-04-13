@@ -503,21 +503,25 @@ footer p {
         width: 250px;
         padding: 14px;
     }
-
-    .textoSobre {
-        margin: 0;
+    .sectionSobre {
+        margin-top: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 12px;
+        & .imgSobre {
+            width: 180px;
+        }
+        & .textoSobre {
+            margin-top: 40px;
+            padding: 10px;
+            width: 100%;
+            text-align: justify;
+        & h2 {
+            margin: 20px 0 5px 0;
+        }
+        }
     }
-
-    .textoSobre h2 {
-        font-size: 17px;
-        margin: 0; 
-    }
-
-    .textoSobre p {
-        font-size: 1rem;
-        margin-right: 12px;
-    }
-
     .habilidades h2 {
         font-size: 17px;
     }
@@ -543,7 +547,7 @@ footer p {
     }
 }
 
-@media (max-width: 321px) { 
+@media (max-width: 320px) { 
     .video-bg {
         height: 668px;
     }
