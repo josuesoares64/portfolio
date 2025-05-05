@@ -44,9 +44,9 @@ Editar
 📫 Contato
 Se quiser trocar ideia, colaborar em projetos ou indicar oportunidades, me chama:
 
-✉️ Email: josuesoaresdev@gmail.com
+✉️ Email: josue,bezerra.2020@gmail.com
 
-💼 LinkedIn: linkedin.com/in/josuesoares64
+💼 LinkedIn: https://www.linkedin.com/in/josue-soares-dev/
 
 💻 GitHub: github.com/josuesoares64
 
